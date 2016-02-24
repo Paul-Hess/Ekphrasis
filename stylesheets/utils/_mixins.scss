@@ -1,0 +1,10 @@
+@mixin header_footer {
+  width: $width-mobile;
+  height: 300px;
+  background: $color-main;
+  border-radius: $radius;
+  text-align: center;
+  font-size: 2.5em;
+  color: $color-text-light;
+  border: $color-main-border;
+}

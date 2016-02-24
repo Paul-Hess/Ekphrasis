@@ -1,0 +1,41 @@
+// color pallette
+// ================== //
+// deep blue
+$color-main: #2F2F5A;
+
+// deep blue 60% transparent
+ $color-main-light: rgba($color-main, .6);
+
+// burnt turd
+$color-text-dark: #603030;
+
+// light cream tan
+$color-text-light: #d8c0a8;
+
+// pink brick
+$color-link: #784848;
+
+// pink brick 60% transparent
+$color-link-active: rgba($color-link, .6);
+
+// purple brick
+$color-button-dark: #481830;
+
+//lighten purple brick
+$color-button-light: lighten($color-button-dark, 25%);
+
+// ====================== //
+
+// sizes
+// ==================== //
+
+$width-mobile: 100%;
+
+$width-medium-up: 33.33%;
+
+
+// border styling
+
+$radius: 3px;
+
+$color-main-border: 2px solid $color-main-light;

@@ -1,0 +1,8 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  @include header_footer;
+  font-size: 1.5em;
+  height: 200px;
+}
