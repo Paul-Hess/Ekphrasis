@@ -1,0 +1,34 @@
+
+
+
+// form element
+.scribe, .comment, .pallette   {
+  @include fill-parent;
+}
+
+// general
+
+label, textarea, input, button[type='submit'] {
+  @include mobile_content_elem();
+}
+
+// labels
+label[for='verse'], label {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: $color-button-light;
+}
+
+
+// inputs
+
+.scribe textarea, input {
+  background-color: $color-link-active;
+  color: $color-text-dark;
+  border: none;
+  outline: none;
+  height: 8em;
+    &:focus {
+      box-shadow: $shadow;
+    }
+}

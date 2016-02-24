@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+button {
+  margin: 0 auto;
+  height: 3em;
+  background: $color-button-dark;
+  border: 2px solid $color-button-light;
+  color: $color-button-light;
+  font-size: 1.5em;
+  border-radius: $radius * 1.5;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
+}

@@ -23,11 +23,15 @@
 @import
   'layout/header',
   'layout/containers',
+  'layout/rows',
+  'layout/columns',
+  'layout/content',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
+  'components/forms',
   'components/nav';
 
 // 6. Page-specific styles

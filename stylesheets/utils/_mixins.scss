@@ -8,3 +8,17 @@
   color: $color-text-light;
   border: $color-main-border;
 }
+
+@mixin mobile_div($margin-top) {
+  @include fill-parent;
+  margin: $margin-top auto;
+  border-radius: $radius;
+}
+
+@mixin mobile_content_elem($display: block) {
+  display: $display;
+  font-size: 1.9rem;
+  width: 80%;
+  margin: 1em auto;
+  text-align: center;
+}

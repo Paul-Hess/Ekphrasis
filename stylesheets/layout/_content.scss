@@ -1,0 +1,15 @@
+.frame {
+  & img {
+    @include fill-parent;
+  }
+}
+
+.poem {
+  & h4, & p {
+    @include mobile_content_elem();
+  }
+}
+
+.side-info p {
+  @include mobile_content_elem();
+}

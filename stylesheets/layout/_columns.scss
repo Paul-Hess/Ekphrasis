@@ -1,0 +1,7 @@
+.frame {
+  @include mobile_div(-.95em);
+}
+
+.poem, .side-info, .poet-form, .comment-form, .canvas-form {
+@include mobile_div(.95em);
+}
