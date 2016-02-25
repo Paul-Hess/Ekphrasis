@@ -7,9 +7,18 @@
 .poem {
   & h4, & p {
     @include mobile_content_elem();
+    @media #{$media_medium} {
+      font-size: 1em;
+    }
   }
 }
 
 .side-info p {
   @include mobile_content_elem();
+
+  @media #{$media_medium} {
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0 0 9em;
+  }
 }

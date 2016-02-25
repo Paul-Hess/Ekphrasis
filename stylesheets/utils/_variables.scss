@@ -43,3 +43,12 @@ $radius: 3px;
 $color-main-border: 2px inset $color-main-light;
 
 $shadow: 2px -1px 0px 1px $color-button-light;
+
+
+// @media vars
+
+$media_medium: unquote('screen and (min-width: 735px)');
+
+$media_large: unquote('screen and (min-width: 915px)');
+
+// ================== //

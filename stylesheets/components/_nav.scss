@@ -2,29 +2,44 @@
  background: $color-main-light;
   @include row;
 
+  @media screen and (max-width: 630px) {
+    display: none;
+  }
+
   & a:first-of-type {
     @include span-columns(2, $display: inline);
   }
 
-  &:hover .dropdown {
-    display: block;
+  @media only handheld and (max-width: 1200px) {
+      &:hover .dropdown {
+        display: block;
+      }
+    }
   }
 
-  color: $color-text-light;
-  .dropdown {
-    display: none;
-    }
 
+  .dropdown {
+    @media (min-width: 1em) {
+      & {
+        display: none;
+      }
+    }
     a {
-      @include span-columns(2, $display: inline);
-       @include shift($n-columns: 3 / 5);
       text-decoration: none;
       color: $color-text-light;
-      span.fa {
-      font-size: 2em;
-      color: $color-text-light;
-    } 
+      @include span-columns(3, $display: inline);
+    }
 
+
+    span.fa {
+    font-size: 2em;
+    color: $color-text-light;
+    }
+
+
+
+    // a {
+    //   @include span-columns(2, $display: inline);
+    //   @include shift($n-columns: 3 / 5);
+    // }
   }
-}
-

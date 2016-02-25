@@ -19,14 +19,6 @@ label {
   color: $color-button-light;
 }
 
-
-form.scribe button {
-  margin-top: 1.55em;
-}
-
-
-
-
 // inputs
 
  input {
@@ -48,8 +40,7 @@ textarea[name='verse'] {
 }
 
 label[for='verse'] {
-  position: abslolute;
-  left: 10vw;
+  margin: 0vw 0vh -3vw 10vw;
   opacity: .6;
   height: 40vh;
   background: url('../img/Hunters-in-the-Snow-bruegel.jpg') no-repeat;

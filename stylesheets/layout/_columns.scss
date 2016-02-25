@@ -1,13 +1,30 @@
-.frame {
-  @include mobile_div(0vh);
-}
 
 .poem, .side-info, .comment-form, .canvas-form {
-@include mobile_div(0vh);
+@include mobile_div(2.5vh);
+}
+
+.frame {
+  @include mobile_div(0vh);
+
+  @media #{$media_medium} {
+    width: 75%;
+    float: left;
+  }
 }
 
 .poet-form {
 	position: relative;
+
+  @media #{$media_large} {
+    width: 50%;
+    top: 5vh;
+    left: 35vh;
+  }
 }
 
-
+@media #{$media_medium} {
+  .poem {
+    width: 25%;
+    float: left;
+  }
+}

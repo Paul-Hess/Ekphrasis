@@ -417,19 +417,32 @@ body, *, *::before, *::after {
   width: 100%;
   table-layout: fixed; }
 
+.poem, .side-info, .comment-form, .canvas-form {
+  width: 100%;
+  margin: 2.5vh auto;
+  border-radius: 3px; }
+
 .frame {
   width: 100%;
   margin: 0vh auto;
   border-radius: 3px; }
-
-.poem, .side-info, .comment-form, .canvas-form {
-  width: 100%;
-  margin: 0vh auto;
-  border-radius: 3px; }
+  @media screen and (min-width: 735px) {
+    .frame {
+      width: 75%;
+      float: left; } }
 
 .poet-form {
   position: relative; }
+  @media screen and (min-width: 915px) {
+    .poet-form {
+      width: 50%;
+      top: 5vh;
+      left: 35vh; } }
 
+@media screen and (min-width: 735px) {
+  .poem {
+    width: 25%;
+    float: left; } }
 .frame img {
   width: 100%; }
 
@@ -439,6 +452,9 @@ body, *, *::before, *::after {
   width: 80%;
   margin: 0 auto 0;
   text-align: center; }
+  @media screen and (min-width: 735px) {
+    .poem h4, .poem p {
+      font-size: 1em; } }
 
 .side-info p {
   display: block;
@@ -446,6 +462,11 @@ body, *, *::before, *::after {
   width: 80%;
   margin: 0 auto 0;
   text-align: center; }
+  @media screen and (min-width: 735px) {
+    .side-info p {
+      font-size: 1.2em;
+      display: block;
+      margin: 0 0 0 9em; } }
 
 .footer {
   width: 100%;
@@ -487,9 +508,6 @@ label {
   font-weight: bolder;
   color: #a83870; }
 
-form.scribe button {
-  margin-top: 1.55em; }
-
 input {
   margin: 0 auto 0;
   background-color: rgba(120, 72, 72, 0.6);
@@ -515,8 +533,7 @@ textarea[name='verse'] {
   text-align: left; }
 
 label[for='verse'] {
-  position: abslolute;
-  left: 10vw;
+  margin: 0vw 0vh -3vw 10vw;
   opacity: .6;
   height: 40vh;
   background: url("../img/Hunters-in-the-Snow-bruegel.jpg") no-repeat;
@@ -541,12 +558,14 @@ input[type='file'] {
 
 .nav {
   background: #40407c;
-  display: block;
-  color: #d8c0a8; }
+  display: block; }
   .nav::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 630px) {
+    .nav {
+      display: none; } }
   .nav a:first-of-type {
     float: left;
     display: block;
@@ -554,22 +573,24 @@ input[type='file'] {
     width: 14.70196%; }
     .nav a:first-of-type:last-child {
       margin-right: 0; }
-  .nav:hover .dropdown {
-    display: block; }
-  .nav .dropdown {
-    display: none; }
-  .nav a {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-    margin-left: 5.11788%;
-    text-decoration: none;
-    color: #d8c0a8; }
-    .nav a:last-child {
-      margin-right: 0; }
-    .nav a span.fa {
-      font-size: 2em;
-      color: #d8c0a8; }
+  @media only handheld and (max-width: 1200px) {
+    .nav:hover .dropdown {
+      display: block; } }
+
+@media (min-width: 1em) {
+  .dropdown {
+    display: none; } }
+.dropdown a {
+  text-decoration: none;
+  color: #d8c0a8;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .dropdown a:last-child {
+    margin-right: 0; }
+.dropdown span.fa {
+  font-size: 2em;
+  color: #d8c0a8; }
 
 /*# sourceMappingURL=main.css.map */
