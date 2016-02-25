@@ -1,6 +1,7 @@
 @mixin header_footer {
   width: $width-mobile;
-  height: 300px;
+  display: table;
+  overflow: visible;
   background: $color-main;
   border-radius: $radius;
   text-align: center;

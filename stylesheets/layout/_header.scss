@@ -3,4 +3,5 @@
 // -----------------------------------------------------------------------------
 .header {
 @include header_footer;
+@include outer-container;
 }

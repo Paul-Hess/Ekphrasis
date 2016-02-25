@@ -4,7 +4,7 @@
 $color-main: #2F2F5A;
 
 // deep blue 60% transparent
- $color-main-light: rgba($color-main, .6);
+ $color-main-light: lighten($color-main, 10%);
 
 // burnt turd
 $color-text-dark: #603030;
@@ -27,17 +27,19 @@ $color-button-light: lighten($color-button-dark, 25%);
 // ====================== //
 
 // sizes
-// ==================== //
+
 
 $width-mobile: 100%;
 
 $width-medium-up: 33.33%;
+
+// ==================== //
 
 
 // border styling
 
 $radius: 3px;
 
-$color-main-border: 2px solid $color-main-light;
+$color-main-border: 2px inset $color-main-light;
 
 $shadow: 2px -1px 0px 1px $color-button-light;

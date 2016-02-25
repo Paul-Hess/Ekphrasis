@@ -35,17 +35,21 @@ form.scribe button {
 
 // textarea
 
-textarea[name=verse] {
+textarea[name='verse'] {
   @include input(transparent, black, 40vh);
   font-size: 3.5em;
   box-shadow: none;
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 0vw;
+  left: 10vw;
   resize: none;
   text-align: left;
 }
 
 label[for='verse'] {
-  @include position(absolute, 104vh null null 10vw);
+  position: abslolute;
+  left: 10vw;
   opacity: .6;
   height: 40vh;
   background: url('../img/Hunters-in-the-Snow-bruegel.jpg') no-repeat;

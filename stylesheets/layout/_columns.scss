@@ -1,7 +1,13 @@
 .frame {
-  @include mobile_div(-.95em);
+  @include mobile_div(0vh);
 }
 
-.poem, .side-info, .poet-form, .comment-form, .canvas-form {
-@include mobile_div(.95em);
+.poem, .side-info, .comment-form, .canvas-form {
+@include mobile_div(0vh);
 }
+
+.poet-form {
+	position: relative;
+}
+
+

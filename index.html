@@ -11,12 +11,14 @@
     <div class="header">
       <h2>Page Title</h2>
       <p>Page info stuff sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <ul class="nav">
-        <li><a href="#"><span class="fa fa-paint-brush"></span></a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#">external info</a></li>
-      </ul>
+      <div class="nav">
+        <a href="#"><span class="fa fa-paint-brush"></span></a>
+        <div class='dropdown'>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">external info</a> 
+        </div> 
+      </div>
     </div>
     <div class="page-wrapper">
       <div class="gallery">
@@ -48,7 +50,8 @@
       </div>
       <div class="canvas-form">
         <form class="pallette" method="post">
-          <label for="painting-1">Upload Your Painting</label>
+          <label for="painting-1">Upload Your Painting <span class='fa fa-upload'></span>
+          </label>
           <input type="file" name="painting" id="painting-1" accept="image/*">
           <button type="submit">Hang</button>
         </form>
@@ -58,17 +61,17 @@
           <button type="submit">Comment</button>
         </form>
       </div>
-
     </div>
     <div class="footer">
-      <h2>Page Title</h2>
       <p>Page info stuff sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <ul class="nav">
-        <li><a href="#"><span class="fa fa-paint-brush"></span></a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#">external info</a></li>
-      </ul>
+      <div class="nav">
+        <a href="#"><span class="fa fa-paint-brush"></span></a>
+        <div class='dropdown'>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">external info</a> 
+        </div> 
+      </div>
     </div>
   </body>
 </html>

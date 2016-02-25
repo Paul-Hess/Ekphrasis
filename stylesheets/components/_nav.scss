@@ -1,20 +1,30 @@
 .nav {
-  width: 80%;
-  float: left;
-  margin: 1em 0;
-  @include align-items(stretch);
-  @include display(flex);
-  @include flex-direction(row);
-  @include justify-content(flex-start);
-}
+ background: $color-main-light;
+  @include row;
 
-.nav > li {
-  @include flex(1);
-  width: 20%;
-  list-style: none;
+  & a:first-of-type {
+    @include span-columns(2, $display: inline);
+  }
 
-  a {
-    text-decoration: none;
-    color: $color-link;
+  &:hover .dropdown {
+    display: block;
+  }
+
+  color: $color-text-light;
+  .dropdown {
+    display: none;
+    }
+
+    a {
+      @include span-columns(2, $display: inline);
+       @include shift($n-columns: 3 / 5);
+      text-decoration: none;
+      color: $color-text-light;
+      span.fa {
+      font-size: 2em;
+      color: $color-text-light;
+    } 
+
   }
 }
+
