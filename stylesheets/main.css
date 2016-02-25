@@ -426,14 +426,14 @@ body, *, *::before, *::after {
   display: block;
   font-size: 1.9rem;
   width: 80%;
-  margin: 1em auto;
+  margin: 0 auto 0;
   text-align: center; }
 
 .side-info p {
   display: block;
   font-size: 1.9rem;
   width: 80%;
-  margin: 1em auto;
+  margin: 0 auto 0;
   text-align: center; }
 
 .footer {
@@ -449,7 +449,7 @@ body, *, *::before, *::after {
   height: 200px; }
 
 button {
-  margin: 0 auto;
+  margin: 0 auto 0;
   height: 3em;
   background: #481830;
   border: 2px solid #a83870;
@@ -466,22 +466,63 @@ label, textarea, input, button[type='submit'] {
   display: block;
   font-size: 1.9rem;
   width: 80%;
-  margin: 1em auto;
+  margin: 0 auto 0;
   text-align: center; }
 
-label[for='verse'], label {
+label {
   font-size: 4rem;
   font-weight: bolder;
   color: #a83870; }
 
-.scribe textarea, input {
+form.scribe button {
+  margin-top: 1.55em; }
+
+input {
+  margin: 0 auto 0;
   background-color: rgba(120, 72, 72, 0.6);
   color: #603030;
   border: none;
   outline: none;
   height: 8em; }
-  .scribe textarea:focus, input:focus {
-    box-shadow: 2px -1px 0px 1px #a83870; }
+
+textarea[name=verse] {
+  margin: 0 auto 0;
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  height: 40vh;
+  font-size: 3.5em;
+  box-shadow: none;
+  position: relative;
+  resize: none;
+  text-align: left; }
+
+label[for='verse'] {
+  position: absolute;
+  top: 104vh;
+  left: 10vw;
+  opacity: .6;
+  height: 40vh;
+  background: url("../img/Hunters-in-the-Snow-bruegel.jpg") no-repeat;
+  background-position: center 1%;
+  background-size: 99% 95%; }
+
+label[for='painting-1'] {
+  margin: 0 auto 0;
+  background-color: rgba(120, 72, 72, 0.6);
+  color: #2F2F5A;
+  border: none;
+  outline: none;
+  height: 5vh; }
+
+input[type='file'] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
 
 .nav {
   width: 80%;

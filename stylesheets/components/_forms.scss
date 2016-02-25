@@ -13,22 +13,61 @@ label, textarea, input, button[type='submit'] {
 }
 
 // labels
-label[for='verse'], label {
+label {
   font-size: 4rem;
   font-weight: bolder;
   color: $color-button-light;
 }
 
 
+form.scribe button {
+  margin-top: 1.55em;
+}
+
+
+
+
 // inputs
 
-.scribe textarea, input {
-  background-color: $color-link-active;
-  color: $color-text-dark;
-  border: none;
-  outline: none;
-  height: 8em;
-    &:focus {
-      box-shadow: $shadow;
-    }
+ input {
+  @include input();
+}
+
+// textarea
+
+textarea[name=verse] {
+  @include input(transparent, black, 40vh);
+  font-size: 3.5em;
+  box-shadow: none;
+  position: relative;
+  resize: none;
+  text-align: left;
+}
+
+label[for='verse'] {
+  @include position(absolute, 104vh null null 10vw);
+  opacity: .6;
+  height: 40vh;
+  background: url('../img/Hunters-in-the-Snow-bruegel.jpg') no-repeat;
+  background-position: center 1%;
+  background-size: 99% 95%;
+}
+
+// upload
+
+label[for='painting-1'] {
+  @include input($color: $color-main, $height: 5vh);
+  // &:hover,
+  // &focus {
+  //
+  // }
+}
+
+input[type='file'] {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }

@@ -19,6 +19,18 @@
   display: $display;
   font-size: 1.9rem;
   width: 80%;
-  margin: 1em auto;
+  margin: 0 auto 0;
   text-align: center;
+}
+
+@mixin input($bg-color: $color-link-active, $color: $color-text-dark, $height: 8em) {
+  margin: 0 auto 0;
+  background-color: $bg-color;
+  color: $color;
+  border: none;
+  outline: none;
+  height: $height;
+    // &:focus {
+    //   box-shadow: $shadow;
+    // }
 }
