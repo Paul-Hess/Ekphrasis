@@ -1,20 +1,22 @@
 .nav {
- background: $color-main-light;
-  @include row;
+   background: $color-main-light;
+    @include row;
+  
 
-  @media screen and (max-width: 630px) {
-    display: none;
-  }
+    & a:first-of-type {
+      @include span-columns(2, $display: inline);
+    }
 
-  & a:first-of-type {
-    @include span-columns(2, $display: inline);
-  }
-
-  @media only handheld and (max-width: 1200px) {
-      &:hover .dropdown {
+    &:hover .dropdown {
+      display: block;
+    }
+    @media  #{$media_medium} {
+      & {
         display: block;
       }
+
     }
+
   }
 
 

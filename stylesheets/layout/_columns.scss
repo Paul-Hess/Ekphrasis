@@ -3,6 +3,20 @@
 @include mobile_div(2.5vh);
 }
 
+.comment-form {
+  @media #{$media_large} {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+.canvas-form {
+  @media #{$media_large} {
+    width: 50%;
+    float: left;
+  }
+}
+
 .frame {
   @include mobile_div(0vh);
 
@@ -12,19 +26,19 @@
   }
 }
 
+@media #{$media_medium} {
+  .poem {
+    width: 20%;
+    float: right;
+  }
+}
+
 .poet-form {
 	position: relative;
 
   @media #{$media_large} {
+    position: static;
     width: 50%;
-    top: 5vh;
-    left: 35vh;
-  }
-}
-
-@media #{$media_medium} {
-  .poem {
-    width: 25%;
-    float: left;
+    float: right;
   }
 }

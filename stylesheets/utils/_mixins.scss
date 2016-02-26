@@ -24,14 +24,14 @@
   text-align: center;
 }
 
-@mixin input($bg-color: $color-link-active, $color: $color-text-dark, $height: 8em) {
+@mixin input($bg-color: $color-link-active, $color: $color-text-dark, $height: 8vh) {
   margin: 0 auto 0;
   background-color: $bg-color;
   color: $color;
   border: none;
   outline: none;
   height: $height;
-    // &:focus {
-    //   box-shadow: $shadow;
-    // }
+    @media #{$media_large} {
+      height: 2rem;
+    }
 }

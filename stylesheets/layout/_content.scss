@@ -20,5 +20,15 @@
     font-size: 1.2em;
     display: block;
     margin: 0 0 0 9em;
+    clear: right;
+  }
+}
+
+.comment-form .comment {
+  @media #{$media_large} {
+    width: 100%;
+    float: right;
+    clear: right;
+    margin: 0 auto 0;
   }
 }

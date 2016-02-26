@@ -1,5 +1,4 @@
 .page-wrapper {
   @include outer-container;
-  background: url('../img/paper.jpg');
-  background-size: cover;
+  @include radial-gradient(rgba(92,134,121,1) 0%, rgba(86,121,100,1) 22%, rgba(80,106,77,0.99) 46%, rgba(80,106,77,0.99) 66%, rgba(80,106,77,0.99) 82%, rgba(80,106,77,0.99));
 }

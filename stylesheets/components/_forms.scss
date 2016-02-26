@@ -10,13 +10,17 @@
 
 label, textarea, input, button[type='submit'] {
   @include mobile_content_elem();
-}
+  }
 
 // labels
 label {
   font-size: 4rem;
   font-weight: bolder;
   color: $color-button-light;
+
+  @media #{$media_medium} {
+    font-size: 2em;
+  }
 }
 
 // inputs
@@ -27,7 +31,7 @@ label {
 
 // textarea
 
-textarea[name='verse'] {
+textarea[name='verse-1'] {
   @include input(transparent, black, 40vh);
   font-size: 3.5em;
   box-shadow: none;
@@ -37,25 +41,40 @@ textarea[name='verse'] {
   left: 10vw;
   resize: none;
   text-align: left;
+  @media #{$media_large} {
+    position: static;
+    left: 0;
+    @include input($color: black);
+    font-size: 1.5em;
+
+    &.verse {
+      height: 14vh;
+    }
+  }
 }
 
-label[for='verse'] {
+label[for='verse-1'] {
   margin: 0vw 0vh -3vw 10vw;
   opacity: .6;
   height: 40vh;
   background: url('../img/Hunters-in-the-Snow-bruegel.jpg') no-repeat;
   background-position: center 1%;
   background-size: 99% 95%;
+  @media #{$media_large} {
+    position: static;
+    height: 5vh;
+    margin: 0;
+    opacity: 1;
+    background: none;
+    @include mobile_content_elem;
+  }
 }
 
 // upload
 
 label[for='painting-1'] {
   @include input($color: $color-main, $height: 5vh);
-  // &:hover,
-  // &focus {
-  //
-  // }
+  font-size: 2em;
 }
 
 input[type='file'] {
